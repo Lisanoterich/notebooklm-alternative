@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NotebookLM Alternative: Same AI Q&A, Your Data Stays on Your Device | NoteRich</title>
+<meta name="description" content="Looking for a NotebookLM alternative that keeps your documents private? NoteRich gives you the same AI-powered document Q&A experience — import, ask, get answers — but all your data stays on your device. No uploads, no training on your content.">
+<meta name="keywords" content="NotebookLM alternative, private document AI, local RAG, AI document search, NotebookLM privacy, private AI Q&A, local-first AI, document Q&A tool">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://noterich.com/">
+<meta property="og:title" content="NotebookLM Alternative: Same AI Q&A, Your Data Stays on Your Device">
+<meta property="og:description" content="Import your documents. Ask questions in natural language. Get AI-powered answers with source citations. Your data never leaves your device.">
+<meta property="og:url" content="https://lisanoterich.github.io/notebooklm-alternative/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NotebookLM Alternative — Private AI Document Q&A">
+<meta name="twitter:description" content="Same AI Q&A as NotebookLM. Your data stays on your device. Try free in your browser.">
+<style>
+  :root { --bg: #fafafa; --text: #1a1a1a; --muted: #666; --accent: #2563eb; --accent-hover: #1d4ed8; --card: #fff; --border: #e5e5e5; --green: #059669; --red: #dc2626; --yellow: #d97706; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f0f0f; --text: #e5e5e5; --muted: #999; --card: #1a1a1a; --border: #2a2a2a; } }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+  
+  header { padding: 60px 0 40px; text-align: center; }
+  .badge { display: inline-block; background: #ecfdf5; color: var(--green); padding: 6px 16px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-bottom: 20px; }
+  h1 { font-size: clamp(28px, 5vw, 44px); font-weight: 800; letter-spacing: -0.5px; margin-bottom: 16px; line-height: 1.2; }
+  .subtitle { font-size: clamp(16px, 3vw, 20px); color: var(--muted); max-width: 600px; margin: 0 auto 32px; }
+  .cta-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .cta-primary { background: var(--accent); color: #fff; padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: background .2s; }
+  .cta-primary:hover { background: var(--accent-hover); }
+  .cta-secondary { background: var(--card); color: var(--text); padding: 14px 32px; border-radius: 8px; font-size: 16px; font-weight: 600; text-decoration: none; border: 1px solid var(--border); transition: border-color .2s; }
+  .cta-secondary:hover { border-color: #999; }
+  
+  section { padding: 48px 0; }
+  h2 { font-size: clamp(22px, 4vw, 30px); font-weight: 700; margin-bottom: 12px; letter-spacing: -0.3px; }
+  h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+  p { margin-bottom: 16px; color: var(--muted); }
+  
+  .comparison { background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .comparison-header { display: grid; grid-template-columns: 1.5fr 1fr 1fr; padding: 16px 24px; background: #f5f5f5; font-weight: 600; font-size: 14px; }
+  @media (prefers-color-scheme: dark) { .comparison-header { background: #1e1e1e; } }
+  .comparison-row { display: grid; grid-template-columns: 1.5fr 1fr 1fr; padding: 14px 24px; border-top: 1px solid var(--border); font-size: 15px; align-items: center; }
+  .comparison-row .label { font-weight: 500; color: var(--text); }
+  .check { color: var(--green); font-weight: 600; }
+  .cross { color: var(--muted); }
+  .highlight { color: var(--accent); font-weight: 600; }
+  
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 640px) { .pros-cons { grid-template-columns: 1fr; } .comparison-header, .comparison-row { grid-template-columns: 1.2fr 1fr 1fr; font-size: 13px; padding: 10px 12px; } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 28px; }
+  .card h3 { display: flex; align-items: center; gap: 8px; }
+  .card ul { list-style: none; padding: 0; }
+  .card li { padding: 6px 0; color: var(--muted); font-size: 15px; }
+  .card li::before { content: '• '; color: var(--accent); }
+  
+  .how-it-works { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 640px) { .how-it-works { grid-template-columns: 1fr; } }
+  .step { text-align: center; }
+  .step-num { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; margin-bottom: 12px; }
+  .step h4 { font-size: 16px; margin-bottom: 4px; }
+  .step p { font-size: 14px; }
+  
+  .faq { max-width: 700px; margin: 0 auto; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
+  .faq-item summary { font-weight: 600; font-size: 17px; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 20px; color: var(--muted); }
+  .faq-item[open] summary::after { content: '−'; }
+  .faq-item p { margin-top: 12px; font-size: 15px; }
+  
+  footer { padding: 48px 0; text-align: center; border-top: 1px solid var(--border); margin-top: 40px; }
+  footer p { font-size: 14px; }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header class="container">
+  <div class="badge">🔒 Your data stays on your device</div>
+  <h1>NotebookLM Alternative:<br>Same AI Q&A. Private by Default.</h1>
+  <p class="subtitle">Import your documents. Ask questions in natural language. Get AI-powered answers with source citations — exactly like NotebookLM. The difference? <strong>Your files never leave your device.</strong></p>
+  <div class="cta-group">
+    <a href="https://noterich.com/app/" class="cta-primary" rel="nofollow">🚀 Try Free in Browser →</a>
+    <a href="https://noterich.com/#pricing" class="cta-secondary" rel="nofollow">See Pricing</a>
+  </div>
+</header>
+
+<section class="container">
+  <h2>Head-to-Head Comparison</h2>
+  <p>Both tools let you upload documents and ask questions in natural language. Here's how they differ.</p>
+  
+  <div class="comparison">
+    <div class="comparison-header">
+      <span>Feature</span><span>NoteRich</span><span>NotebookLM</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">AI Document Q&A</span><span class="check">✓</span><span class="check">✓</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Source citations</span><span class="check">✓ Clickable</span><span class="check">✓ Clickable</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Data storage</span><span class="highlight">Your device</span><span class="cross">Google Cloud</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Data used to train AI?</span><span class="highlight">Never</span><span class="cross">Per Google policy</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Works offline</span><span class="highlight">Yes</span><span class="cross">No</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Rich text editor</span><span class="check">✓ Markdown + WYSIWYG</span><span class="cross">Basic notes only</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Cross-device sync</span><span class="highlight">P2P encrypted</span><span class="cross">Google account</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">File upload limit</span><span class="check">500MB+ per file</span><span class="cross">~200MB sources</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Knowledge base size</span><span class="check">20,000+ notes</span><span class="cross">50 sources/notebook</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Languages supported</span><span class="highlight">40+ languages</span><span class="cross">~35 languages</span>
+    </div>
+    <div class="comparison-row">
+      <span class="label">Pricing</span><span class="highlight">Free / $39.90/yr</span><span class="cross">Free</span>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>When to Choose NoteRich Over NotebookLM</h2>
+  <div class="pros-cons">
+    <div class="card">
+      <h3>🔒 You handle sensitive documents</h3>
+      <ul>
+        <li>Legal case files, medical records, financial data</li>
+        <li>Proprietary research, unpublished manuscripts</li>
+        <li>Anything covered by NDA or client confidentiality</li>
+        <li>GDPR / HIPAA compliance requirements</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>⚡ You need more than Q&A</h3>
+      <ul>
+        <li>Write and edit documents alongside your research</li>
+        <li>Organize into multiple workspaces by project</li>
+        <li>Mix Markdown, LaTeX, diagrams, and video</li>
+        <li>Keep everything — not limited to 50 sources</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🌐 You work across languages</h3>
+      <ul>
+        <li>Search documents in 40+ languages</li>
+        <li>Ask in one language, find answers in another</li>
+        <li>Multilingual tokenization for accurate results</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>🔌 You want your data, not Google's cloud</h3>
+      <ul>
+        <li>Notes stay 100% on your device</li>
+        <li>P2P sync — no central server holds your files</li>
+        <li>AES-GCM end-to-end encryption for exports</li>
+        <li>AI gets only minimal, temporary context</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>How It Works</h2>
+  <p style="text-align:center;max-width:600px;margin:0 auto 32px;">Three steps. No installation. Works in your browser right now.</p>
+  <div class="how-it-works">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Import Your Documents</h4>
+      <p>Drag in PDFs, Word files, text notes, Markdown. Up to 500MB+ per file. 40+ languages supported.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Index Locally</h4>
+      <p>Your browser builds a search index — on your device. Nothing is uploaded. Works offline.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Ask Anything</h4>
+      <p>Type a natural language question. Get an AI answer with clickable source citations — in milliseconds.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div style="background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 40px 32px; text-align: center;">
+    <h2 style="margin-bottom: 8px;">Ready to try a private NotebookLM alternative?</h2>
+    <p style="margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto;">Open in your browser. No credit card. No installation. Your documents never leave your device.</p>
+    <a href="https://noterich.com/app/" class="cta-primary" rel="nofollow">🚀 Launch Free Playground →</a>
+  </div>
+</section>
+
+<section class="container">
+  <h2 style="text-align:center;">Frequently Asked Questions</h2>
+  <div class="faq">
+    <details class="faq-item">
+      <summary>Is NoteRich really a NotebookLM alternative?</summary>
+      <p>Yes — if your priority is AI-powered document Q&A. Both tools let you import documents and ask natural language questions. NoteRich adds privacy (local storage), a full rich-text editor, larger file support, and works offline. If you use NotebookLM for research and writing, NoteRich covers those workflows and more.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Where does my data go when I use NoteRich?</summary>
+      <p>Your data stays on your device. Period. NoteRich stores everything in your browser's local storage (IndexedDB). For AI features, only anonymized, minimal context snippets are temporarily sent — and never stored. NoteRich does not train on your data.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Does NoteRich work offline?</summary>
+      <p>Yes. All document indexing and search runs locally in your browser via Web Workers. You can search your knowledge base without an internet connection. AI Q&A requires connectivity for the synthesis step, but your data is never uploaded — only anonymized context is sent.</p>
+    </details>
+    <details class="faq-item">
+      <summary>How many documents can I import?</summary>
+      <p>NoteRich supports up to 7,000,000+ characters per note and 20,000+ notes per workspace. That's orders of magnitude more than NotebookLM's 50-source limit. You can create multiple workspaces for different projects.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I use NoteRich on my phone?</summary>
+      <p>Yes. NoteRich is a PWA (Progressive Web App) — it works on any device with a modern browser. The responsive UI adapts to mobile screens. Open noterich.com on your phone and start using it.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Is NoteRich free?</summary>
+      <p>NoteRich has a generous free tier: full editor, up to 5 workspaces, basic AI search, local storage. The Pro plan ($39.90/year) adds unlimited workspaces, large knowledge base RAG, encrypted exports, PDF export, password-protected sharing, and priority support.</p>
+    </details>
+  </div>
+</section>
+
+<footer class="container">
+  <p>NoteRich — <strong>Smart Notes that Respect Your Privacy</strong></p>
+  <p style="margin-top: 8px;"><a href="https://noterich.com">noterich.com</a> · <a href="https://noterich.com/app/">Try Free</a> · <a href="https://noterich.com/#pricing">Pricing</a></p>
+  <p style="margin-top: 16px; color: var(--muted); font-size: 13px;">This is an independent comparison page. NoteRich is not affiliated with Google or NotebookLM.</p>
+</footer>
+
+</body>
+</html>
